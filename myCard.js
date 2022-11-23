@@ -1,19 +1,33 @@
-class myCard extends HTMLElement{
+class myCard extends HTMLElement {
 
-    constructor(){
+    constructor() {
         super();
-        this.attachShadow({mode: 'open'});  
+        this.attachShadow({ mode: 'open' });
     }
 
-    getTemplate(){
-        const template= document.createElement('template');
+    getTemplate() {
+        const template = document.createElement('template');
         template.innerHTML = `
+        
+        ${this.getStyles()}
+       
         <h1>Template</h1>
         `
         return template;
     }
-    connectedCallback(){
+    getStyles() {
+        const styles = `
+        <style>
+        h1 {
+            color: red;
+        }
+        </style>
+        `
+
+        return styles;
+    }
+    connectedCallback() {
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
     }
 }
-customElements.define('my-card',myCard);
+customElements.define('my-card', myCard);
