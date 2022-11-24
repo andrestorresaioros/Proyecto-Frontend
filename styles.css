@@ -1,14 +1,12 @@
 .content {
     column-count: 5;
     column-fill: balance;
-
 }
 
 .grid {
     grid-template-columns: repeat(5, 1fr);
     display: grid;
     grid-gap: 10px;
-
 }
 
 .column {
@@ -24,6 +22,7 @@ img {
     float: left;
     display: block;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 button {
@@ -109,10 +108,14 @@ input {
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: 10px 10px;
-
-
-    
 }
 input::placeholder {
     font-weight: bold;    
+}
+
+@media (max-width:375px) {
+    .content {
+        column-count: 2;
+        column-fill: balance;
+    }
 }

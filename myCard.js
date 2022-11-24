@@ -1,5 +1,4 @@
 class myCard extends HTMLElement {
-
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -7,7 +6,6 @@ class myCard extends HTMLElement {
         this.imagen = this.getAttribute('img');
         this.icono= this.getAttribute('icono');
     }
-
     getTemplate() {
         const template = document.createElement('template');
         template.innerHTML = `
@@ -24,9 +22,6 @@ class myCard extends HTMLElement {
     getStyles() {
         const styles = `
         <style>
-        h1 {
-            color: red;
-        }
         #icono {
             max-width: 300px;
             margin: auto;
@@ -61,12 +56,8 @@ class myCard extends HTMLElement {
             display: block;
             margin-top: 20px;
           }
-     
-        
         </style>
-      
         `
-
         return styles;
     }
     connectedCallback() {
