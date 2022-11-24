@@ -14,19 +14,12 @@ class myCard extends HTMLElement {
         template.innerHTML = `
         
         ${this.getStyles()}
-        
         <div class="card">
-        
             <img src=${this.imagen} alt="">
             <h1>${this.descripcion}</h1>
             <img class="pequeña" src=${this.icono} alt="">
             <p>${this.autor}</p>
-            
-        
         </div>
-      
-         
-        
         `
         return template;
     }
@@ -50,13 +43,6 @@ class myCard extends HTMLElement {
             box-shadow: 5px 5px 5px 5px grey;
             font-size: 15px;
         }
-        .content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
-            
-        }
         p{
             padding: 10px;
             text-align: justify;
@@ -65,7 +51,7 @@ class myCard extends HTMLElement {
         }
         img {
             border-radius: 10px;
-            max-width: 300px;
+            max-width: 206px;
             margin: auto;
             display: block;
         }
