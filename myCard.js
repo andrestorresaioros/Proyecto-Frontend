@@ -3,7 +3,6 @@ class myCard extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        this.descripcion = this.getAttribute('descripcion');
         this.autor = this.getAttribute('autor');
         this.imagen = this.getAttribute('img');
         this.icono= this.getAttribute('icono');
@@ -16,7 +15,6 @@ class myCard extends HTMLElement {
         ${this.getStyles()}
         <div class="card">
             <img src=${this.imagen} alt="">
-            <h1>${this.descripcion}</h1>
             <img class="pequeña" src=${this.icono} alt="">
             <p>${this.autor}</p>
         </div>
@@ -37,7 +35,7 @@ class myCard extends HTMLElement {
         .card {
             border-top: 5px solid var(--Red);
             max-width: 300px;
-            margin: 20px auto;
+            margin: 5px auto;
             border-radius: 5px;
             padding: 10px;
             box-shadow: 5px 5px 5px 5px grey;
@@ -61,7 +59,7 @@ class myCard extends HTMLElement {
             height: 50px;
             float: left;
             display: block;
-            margin: 10 px;
+            margin-top: 20px;
           }
      
         

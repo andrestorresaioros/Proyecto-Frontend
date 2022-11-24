@@ -7,64 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
     <link rel="icon" href="Iconos/RGB.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <style>
-        .content {
-            grid-template-columns: repeat(5, 1fr);
-        }
-        .grid{
-            display: grid;
-            grid-gap: 10px;
-        }
-        .column{
-            grid-auto-rows: min-content;
-        }
-        img{
-            border-radius: 100px;
-            width: 30px;
-            height: 30px;
-            float: left;
-            display: block;
-            padding-right: 10px;
-        }
-        button{
-            margin-top: 5px ;
-        }
-    
-        
-    </style>
     <header class="encabezado">
         <div>
             <img src="Iconos/RGB.png" alt="">
-            <button>Inicio</button>
+            <button class=" button button1">Inicio</button>
             <button>Hoy</button>
-            <button>Crear</button>
-            <input type="search" name="busqueda" placeholder="Buscar" style="width : 700px">
-            <button>Notificacion</button>
-            <button>Mensajes</button>
-            <button>Tu perfil</button>
+            <button class=" button button3">Crear</button>
+            <input type="search" name="busqueda" placeholder="      Buscar" style="width : 767px" img src="Iconos/RGB.png" alt="">
+            <button class="button button4"></button>
+            <button class="button button5"></button>
+            <button class="button button7"></button>  
+            <button class="button button6"></button>
         </div>
     </header>
-    
-    <section class="content grid ">
-        <my-card img="Imagenes/Bryant.jpeg" descripcion="" autor=" Edit photos" icono="Iconos/ico2.jpg">
+
+    <section class="grid">
+        <my-card img="Imagenes/Bryant.jpeg" autor=" Edit photos" icono="Iconos/ico2.jpg">
         </my-card>
         </my-card>
-        <my-card img="Imagenes/pat.jpg" descripcion="" autor="" icono="null">
+        <my-card img="Imagenes/pat.jpg" autor="" icono="null">
         </my-card>
-        <my-card img="Imagenes/JaMorant.jpg" descripcion="" autor="Printerest" icono="Iconos/ico1.jpg">
+        <my-card img="Imagenes/JaMorant.jpg" autor="Printerest" icono="Iconos/ico1.jpg">
         </my-card>
-        <my-card img="Imagenes/Kobe_b.jpeg" descripcion="" autor="𝐃𝐢𝐨𝐫𝐬 𝐀𝐑𝐂𝐇𝐈𝐕𝐄" icono="Iconos/ico4.jpg">
+        <my-card img="Imagenes/Kobe_b.jpeg" autor="𝐃𝐢𝐨𝐫𝐬 𝐀𝐑𝐂𝐇𝐈𝐕𝐄" icono="Iconos/ico4.jpg">
         </my-card>
-        <my-card img="Imagenes/ja.jpeg" descripcion="" autor="Mohand saï" icono="Iconos/ico5.jpg">
+        <my-card img="Imagenes/ja.jpeg" autor="Mohand saï" icono="Iconos/ico5.jpg">
         </my-card>
-        <my-card img="Imagenes/leb.jpeg" descripcion="" autor="" icono="null">
+        <my-card img="Imagenes/leb.jpeg" autor="" icono="null">
         </my-card>
-        <my-card img="Imagenes/curry.jpeg" descripcion="" autor="Tamás Micheller" icono="Iconos/ico6.jpg">
+        <my-card img="Imagenes/curry.jpeg" autor="Tamás Micheller" icono="Iconos/ico6.jpg">
         </my-card>
-        <my-card img="Imagenes/lebron.jpeg" descripcion="" autor="wallpaper celular" icono="Iconos/ico7.jpg">
+        <my-card img="Imagenes/lebron.jpeg" autor="wallpaper celular" icono="Iconos/ico7.jpg">
+        </my-card>
+        <my-card img="Imagenes/jordan.jpeg" autor="BigKids" icono="Iconos/ico8.jpg">
+        </my-card>
+        <my-card img="Imagenes/flow.jpeg" autor="Sai_ Gar" icono="Iconos/ico9.jpg">
         </my-card>
     </section>
     <script src="myCard.js"></script>
