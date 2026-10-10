@@ -10,6 +10,10 @@ Galería de imágenes inspirada en el diseño de Pinterest, construida con JavaS
 
 **Demo:** https://andrestorresaioros.github.io/Proyecto-Frontend/
 
+## Vista previa
+
+![Galería de tarjetas construida con el componente my-card](capturas/galeria.jpg)
+
 ## Características
 
 - Componente reutilizable `<my-card>` definido con `customElements.define`.
